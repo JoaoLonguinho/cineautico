@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Selecionar Lugar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cinestylesheet.css">
+    <script src="https://kit.fontawesome.com/3b916d7d16.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-title">cineautico - a melhor de rede de cinema da américa latina!</h1>
+    </header>
+    <h1 class="titulo-filmes">Selecione os lugares desejados:</h1>
+
+    <section id="chairsx" class="chairs">
+    </section>
+
+    <div class="foot">
+        <footer>
+            Cineautico. All rights reserved 2021.
+        </footer>
+    </div>
+
+    <script>
+
+        var chairs = ["[  ]"];
+
+        for (i = 0; i < 8; i++)
+        {
+            chairs.push("[  ]");
+            if (chairs.length % 4 === 0){
+                document.getElementById("chairsx").innerHTML = "<br>";
+            }
+        }
+        document.getElementById("chairsx").innerHTML = chairs;
+        
+        /*
+        function addMovie(name, hour, description) {
+        return {
+            name: name,
+            hour: hour,
+            description: description
+        }
+        };
+        movieOne = addMovie("Castelo Animado", "10h30", "Um filme muito bom");
+
+        //Primeiro Filme
+        document.getElementById("movieoneName").innerHTML = movieOne.name;
+        document.getElementById("firstMovieHour").innerHTML = movieOne.hour;
+        document.getElementById("descriptionOne").innerHTML = movieOne.description;
+
+
+        //Segundo Filme
+        movieOne = addMovie("A Viagem de Chihiro", "15h30", "Outro filme muito bom");
+
+        document.getElementById("movietwoName").innerHTML = movieOne.name;
+        document.getElementById("secondMovieHour").innerHTML = movieOne.hour;
+        document.getElementById("descriptionTwo").innerHTML = movieOne.description;
+
+        //Terceiro Filme
+        movieOne = addMovie("Susurros do Coração", "20h30", "MDS, só tem filme bom");
+
+        document.getElementById("moviethreeName").innerHTML = movieOne.name;
+        document.getElementById("thirdMovieHour").innerHTML = movieOne.hour;
+        document.getElementById("descriptionThree").innerHTML = movieOne.description;
+        */
+    </script>
+</body>
+
+</html>

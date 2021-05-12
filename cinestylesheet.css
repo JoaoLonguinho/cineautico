@@ -1,113 +1,182 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: linear-gradient(#2931A3,#737CFF);
+
+body {
+    background-color: #1C1C1C;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-header{
-    background-color: #2931A3;
+
+header {
+    background-color: #1C1C1C;
     height: 0%;
-    border-bottom: 4px groove ;
-    border-right: 4px groove ;
-    border-left: 4px groove ;
-    border-color: #F0CF54;
+    border-bottom: 4px groove;
+    border-color: #800E04;
     padding-top: 5px;
 }
 
-.header-title{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.header-title {
+    margin-top: -5px;
+    font-family: arial;
     text-align: center;
-    color: #F0CF54;
-    
+    color: #800E04;
+    -webkit-text-stroke-width: 1px;
+    /* largura da borda */
+    -webkit-text-stroke-color: #696969;
+    /* cor da borda */
 }
-.titulo-filmes{
-    -webkit-text-stroke-width: 1px; /* largura da borda */
-    -webkit-text-stroke-color: #737CFF; /* cor da borda */
+
+.titulo-filmes {
+    -webkit-text-stroke-width: 1px;
+    /* largura da borda */
+    -webkit-text-stroke-color: #696969;
+    /* cor da borda */
     text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #F0CF54;
-    background-color: #2931A3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #800E04;
+    background-color: #1C1C1C;
     padding-bottom: 5px;
     margin-top: 5vh;
-    border-bottom: 4px groove ;
-    border-right: 4px groove ;
-    border-left: 4px groove ;
-    border-color: #F0CF54;
+    border-top: 4px groove;
+    border-bottom: 4px groove;
+    border-color: #800E04;
 }
-.filmes{
+
+.filmes {
     padding-bottom: 30px;
     width: 99.999%;
+    /*display: flex;
+    flex-direction: row;*/
 }
-.filmeUm{
+
+.filmeUm {
     display: inline-block;
-    border: 5px double #F0CF54;
-    width: 310px;
-    background-image: linear-gradient(#737CFF,#2931A3);
-    margin-top: 15px;
+    border: 5px solid #800E04;
+    width: 300px;
+    background-image: linear-gradient(to right bottom, #1C1C1C, #4F4F4F, #1C1C1C);
+    margin-top: 70px;
     margin-left: 30px;
+    border-radius: 10px;
 }
-.filmeDois{
+
+.filmeUm:hover {
+    transition: 0.3s ease-in-out;
+    opacity: 0.5;
+    width: 400px;
+    cursor: pointer;
+}
+
+.filmeDois {
     display: inline-block;
-    border: 5px double #F0CF54;
-    width: 310px;
-    background-image: linear-gradient(#737CFF,#2931A3);
-    margin-top: 15px;
+    border: 5px solid #800E04;
+    width: 300px;
+    background-image: linear-gradient(to right bottom, #1C1C1C, #4F4F4F, #1C1C1C);
+    margin-top: 70px;
     margin-left: 30px;
+    border-radius: 10px;
 }
-.filmeTres{
+
+.filmeDois:hover {
+    transition: 0.3s ease-in-out;
+    opacity: 0.5;
+    width: 400px;
+    cursor: pointer;
+}
+
+.filmeTres {
     display: inline-block;
-    border: 5px double #F0CF54;
-    width: 310px;
-    background-image: linear-gradient(#737CFF,#2931A3);
-    margin-top: 15px;
+    border: 5px solid #800E04;
+    width: 300px;
+    background-image: linear-gradient(to right bottom, #1C1C1C, #4F4F4F, #1C1C1C);
+    margin-top: 70px;
     margin-left: 30px;
+    border-radius: 10px;
 }
-.movie-banner{
-    border: 5px double #F0CF54;
+
+.filmeTres:hover {
+    transition: 0.3s ease-in-out;
+    opacity: 0.5;
+    width: 400px;
+    cursor: pointer;
 }
-.movieName{
+
+.movie-banner {
+    border-bottom: 5px solid #800E04;
+    width: 290px;
+}
+
+.movie-banner:hover {
+    width: 390px;
+    transition: ease-in-out 0.3s;
+}
+
+.movieName {
+    font-family: 'Bebas Neue', cursive;
     text-align: center;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:#F0CF54;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    /* largura da borda */
+    -webkit-text-stroke-color: black;
+    /* cor da borda */
 }
-.tittle-hour{
+
+.tittle-hour {
+    font-family: 'Bebas Neue', cursive;
     text-align: center;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:#F0CF54;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    /* largura da borda */
+    -webkit-text-stroke-color: black;
+    /* cor da borda */
 }
-.hour{
+
+.hour {
+    font-family: 'Bebas Neue', cursive;
     text-align: center;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:#F0CF54;
-    border: 3px solid #F0CF54;
+    color: white;
+    border: 3px solid #800E04;
     margin-left: 30%;
     margin-right: 30%;
     margin-bottom: 30px;
+    border-radius: 10px;
 }
-.hour:hover{
+
+.hour:hover {
+    transition: 0.3s ease-in-out;
     cursor: pointer;
-    background-color: #2931A3;
-    color: #A38618;
+    background-color: #800E04;
+    color: white;
 }
-.description{
+
+.description {
     text-align: center;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:#F0CF54;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
     padding-bottom: 35px;
 }
-.foot{
-    margin-top: 14.5vh;
+
+.foot {
+    margin-top: 7.2vh;
 }
-footer{
-    background-color: #2931A3;
-    color:#F0CF54;
+
+footer {
+    padding: 10px 0px;
+    background-color: #1C1C1C;
+    color: #800E04;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 25px;
-    border-top: 4px groove ;
-    border-right: 4px groove ;
-    border-left: 4px groove ;
-    border-color: #F0CF54;
+    border-color: #800E04;
+}
+.chairs{
+    margin-top: 5px;
+    font-family: arial;
+    color: #800E04;
+    text-align: center;
+    /* largura da borda */
+    /* cor da borda */
 }
